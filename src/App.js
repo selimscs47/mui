@@ -1,10 +1,16 @@
-import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Notes from "./pages/Notes";
+import Create from "./pages/Create";
 
 function App() {
   return (
-    <div className="App">
-      <h1>deneme</h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Notes />} />
+        <Route path="create" element={<Create />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
