@@ -1,15 +1,16 @@
-{"notes":[
+{
+    "notes":[
     {
-        "title":"One Piece Hakkında Herşey",
-        "details":"lorem",
-        "category":"one piece",
-        "id":1
+        "title" : "One Piece Hakkında Herşey",
+        "details" : "lorem",
+        "category" : "one piece",
+        "id" :1
     },
     {
-        "title":"Monkey D Luffy Güçleri",
-        "details":"lorem",
-        "category":"one piece",
-        "id":2
+        "title" : "Monkey D Luffy Güçleri",
+        "details" : "lorem",
+        "category" : "naruto",
+        "id" :2
     }
 ]
-}
+} 

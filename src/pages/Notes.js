@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { Container, Card, Grid, Paper } from "@material-ui/core";
+import React, { useState, useEffect } from "react";
+import {Container,Grid,Paper} from "@material-ui/core";
 import NoteCard from "../components/NoteCard";
 
 export default function Notes() {
 
-  const [notes,setNotes] = useState([])
+  const [notes,setNotes] =useState([])
 
 useEffect(()=>{
-  fetch('http://localhost:3000/notes')
+ 
+  fetch( 'http://localhost:3000/notes')
   .then(res=>res.json())
   .then(data=>setNotes(data))
 },[])

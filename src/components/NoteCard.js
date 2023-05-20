@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardHeader, CardContent, IconButton } from "@material-ui/core";
+import { Card, CardHeader,  IconButton } from "@material-ui/core";
 import { DeleteOutlined } from "@material-ui/icons";
 
 export default function NoteCard({ note }) {
@@ -9,7 +9,7 @@ export default function NoteCard({ note }) {
           <IconButton>
             <DeleteOutlined/>
           </IconButton>
-        } />
+        } title={note.title} subheader={note.category} />
     </Card>
   )
 } 
